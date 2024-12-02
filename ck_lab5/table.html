@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="RU">
+    <head>
+        <link rel="stylesheet" href="table.css">
+        <meta charset="UTF-8">
+        <title>Лабораторная работа №4</title>
+
+    </head>
+    <body>
+        <div class="header">
+            <a href="lab3.html"title="lab3">Основная страница</a>
+            <a href="lab3_page2.html"title="lab3_page2">Позиционирование элементов</a>
+            <a href="table.html" title = "table">Таблица</a><br>
+        </div>
+        <div class="wrapper">
+            <form>
+                <input type="text" name="name" placeholder="ФИО">
+                <input type="text" name="subgroup" placeholder="Подгруппа">
+                <input type="url" name="VK" placeholder="Ссылка ВКонтакте">
+                <input type="submit"></input>
+            </form>
+                <table>
+                    <caption>Студенты группы 6202-090301D</caption>
+                    <tr>
+                        <th>ФИО</th>
+                        <th>Подгруппа</th>
+                        <th>Ссылка ВКонтакте</th>
+                    </tr>
+                    <tr>
+                        <td>Андреев Елисей Алексеевич</td>
+                        <td>1</td>
+                        <td>https://vk.com/kivsyak4</td>
+                    </tr>
+                    <tr>
+                        <td>Марченко Владислав Владимирович</td>
+                        <td>1</td>
+                        <td>https://vk.com/vladislavm24</td>
+                    </tr>
+                    <tr>
+                        <td>Уколов Максим Алексеевич</td>
+                        <td>1</td>
+                        <td>https://vk.com/bountymk</td>
+                    </tr>
+
+                    <tr>
+                        <td>Фёдоров Александр Васильевич</td>
+                        <td>1</td>
+                        <td>https://vk.com/not_alright</td>
+                    </tr>
+                    <tr>
+                        <td>Фёдоров Михаил Васильевич</td>
+                        <td>1</td>
+                        <td>https://vk.com/tvoyo_imya.misha.che_zval_slark</td>
+                    </tr>
+                </table>
+            </div>
+            <script type="text/javascript">
+                function formTable(selector){
+                    var wrapper = document.querySelector(selector);
+                    var form = wrapper.getElementsByTagName("form")[0];
+                    var table = wrapper.getElementsByTagName("table")[0];
+                    form.onsubmit = function(ev){
+                        ev = ev || event;
+                        ev.preventDefault();    
+                        var tr = document.createElement("tr"), td;
+                        for(let i = 0; i < 4; i++){
+                            td = document.createElement("td");
+                            td.innerHTML = this.elements[i].value;
+                            tr.appendChild(td);
+                        }
+                        table.appendChild(tr);    
+                    }  
+                }
+                formTable(".wrapper");
+            </script>
+    </body>

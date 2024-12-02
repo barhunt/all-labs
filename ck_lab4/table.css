@@ -1,0 +1,21 @@
+body{
+    background-color:skyblue;
+}
+table, th, td{
+    border:1px solid black;
+    border-collapse: collapse;
+    padding: 5px 5px 5px 5px;
+}
+caption{
+    font-size: 25px;
+    font-family: sans-serif;
+}
+tr:nth-child(3n+1){
+    background-color: #5993eb;
+}
+tr:nth-child(3n+2){
+    background-color: #60dbae;
+}
+tr:nth-child(3n+3){
+    background-color: #a35656;
+}

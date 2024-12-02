@@ -1,0 +1,112 @@
+h2{
+    text-align: center;
+    font-family: "Comforter Brush";
+}
+
+body{
+    padding-top: 60px;
+}
+
+header{
+    padding-bottom:10px;
+}
+
+.carousel-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 20px 0px;
+}
+
+.carousel-img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.films-cards-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 18rem;
+}
+
+.card-img-top{
+    height: 430px;
+}
+
+.card-text{
+    text-align: justify;
+    font-family: 'Gawaa';
+    font-size: 20px;
+}
+
+.card-link{
+    color: black;
+    font-family: "Luminari";
+    font-size: 16px;
+    background-color: skyblue;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+    border: 1px;
+    border-radius: 5px;
+}
+
+.actor-info-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.actor-info-wrapper li{
+    font-family: fantasy;
+    font-style: oblique;
+    padding-bottom: 5px;
+    max-width: 700px;
+}
+
+footer{
+    background-color: black;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+footer p{
+    color: white;
+    font-size: 50px;
+    font-family: 'Vasek';
+    text-align: center;
+}
+
+.contacts-img{
+    width: 100px;
+}
+
+.contacts-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts-item{
+    padding-right: 2px;
+    padding-left: 2px;
+}
+html {
+    background-image: url(https://kartinkis.cdnbro.com/posts/1726932-fon-dlia-dialogov-35.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
